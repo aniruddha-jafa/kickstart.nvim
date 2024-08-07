@@ -12,7 +12,7 @@ vim.g.have_nerd_font = true
 
 -- netrw
 vim.g.netrw_keepdir=0
-vim.g.netrw_list_style=3
+vim.g.netrw_liststyle=3
 vim.g.netrw_winsize=30
 vim.g.netrw_banner=0
 vim.g.netrw_localcopydircmd = 'cp -r' -- enable recursive copy of directories
@@ -25,9 +25,7 @@ vim.g.netrw_localcopydircmd = 'cp -r' -- enable recursive copy of directories
 
 -- Make line numbers default
 vim.opt.number = true
--- You can also add relative line numbers, to help with jumping.
---  Experiment for yourself to see if you like it!
--- vim.opt.relativenumber = true
+vim.opt.relativenumber = true
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
