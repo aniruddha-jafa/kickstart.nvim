@@ -15,6 +15,7 @@ return {
   },
   opts = {
     filesystem = {
+      filered_items: { hide_hidden: false },
       window = {
         mappings = {
           ['\\'] = 'close_window',
