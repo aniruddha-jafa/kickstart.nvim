@@ -1,3 +1,6 @@
+
+-- [[Global Settings]]
+--
 -- Set <space> as the leader key
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
@@ -7,7 +10,15 @@ vim.g.maplocalleader = ' '
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 
+-- netrw
+vim.g.netrw_keepdir=0
+vim.g.netrw_list_style=3
+vim.g.netrw_winsize=30
+vim.g.netrw_banner=0
+vim.g.netrw_localcopydircmd = 'cp -r' -- enable recursive copy of directories
+
 -- [[ Setting options ]]
+--
 -- See `:help vim.opt`
 -- NOTE: You can change these options as you wish!
 --  For more options, you can see `:help option-list`
