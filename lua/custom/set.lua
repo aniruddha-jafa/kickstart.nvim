@@ -12,7 +12,7 @@ vim.g.have_nerd_font = true
 
 -- netrw
 vim.g.netrw_keepdir=0
-vim.g.netrw_liststyle=3
+--vim.g.netrw_liststyle=3
 vim.g.netrw_winsize=30
 vim.g.netrw_banner=0
 vim.g.netrw_localcopydircmd = 'cp -r' -- enable recursive copy of directories
@@ -79,3 +79,9 @@ vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
+
+-- columns
+vim.opt.colorcolumn = '80'
+
+-- colors
+vim.opt.termguicolors = true
