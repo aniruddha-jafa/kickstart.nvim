@@ -32,10 +32,10 @@ vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower win
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
 -- vertical navigation
-vim.keymap.set("n", "<C-d>", "<C-d>zz") -- center vertically
-vim.keymap.set("n", "<C-u>", "<C-u>zz")
-vim.keymap.set("n", "n", "nzzzv") -- center & open all folds to display match
-vim.keymap.set("n", "N", "Nzzzv")
+vim.keymap.set('n', '<C-d>', '<C-d>zz') -- center vertically
+vim.keymap.set('n', '<C-u>', '<C-u>zz')
+vim.keymap.set('n', 'n', 'nzzzv') -- center & open all folds to display match
+vim.keymap.set('n', 'N', 'Nzzzv')
 
 -- netrw
-vim.keymap.set('n', '\\', ':Lexplore<CR>', { desc = 'Open netrw to the left', noremap=true})
+vim.keymap.set('n', '\\', ':Explore<CR>', { desc = 'Open netrw to the left', noremap = true })

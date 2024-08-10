@@ -47,6 +47,7 @@ return {
       json = { 'prettierd', 'prettier', stop_after_first = true },
       yaml = { 'yamlfix' },
       toml = { 'taplo' },
+      xml = { 'xmllint' },
     },
   },
 }

@@ -1,4 +1,3 @@
-
 -- [[Global Settings]]
 --
 -- Set <space> as the leader key
@@ -11,10 +10,10 @@ vim.g.maplocalleader = ' '
 vim.g.have_nerd_font = true
 
 -- netrw
-vim.g.netrw_keepdir=0
+vim.g.netrw_keepdir = 0
 --vim.g.netrw_liststyle=3
-vim.g.netrw_winsize=30
-vim.g.netrw_banner=0
+vim.g.netrw_winsize = 30
+vim.g.netrw_banner = 0
 vim.g.netrw_localcopydircmd = 'cp -r' -- enable recursive copy of directories
 
 -- [[ Setting options ]]
@@ -27,8 +26,16 @@ vim.g.netrw_localcopydircmd = 'cp -r' -- enable recursive copy of directories
 vim.opt.number = true
 vim.opt.relativenumber = true
 
+-- Tabs
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+
+vim.opt.smartindent = true
+
 -- Enable mouse mode, can be useful for resizing splits for example!
-vim.opt.mouse = 'a'
+-- vim.opt.mouse = 'a'
 
 -- Don't show the mode, since it's already in the status line
 vim.opt.showmode = false
