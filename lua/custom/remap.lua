@@ -4,6 +4,8 @@
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
 
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
@@ -37,5 +39,15 @@ vim.keymap.set('n', '<C-u>', '<C-u>zz')
 vim.keymap.set('n', 'n', 'nzzzv') -- center & open all folds to display match
 vim.keymap.set('n', 'N', 'Nzzzv')
 
+-- move visual selection up or down (like alt in VS Code)
+vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
+vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
+
 -- netrw
-vim.keymap.set('n', '\\', ':Explore<CR>', { desc = 'Open netrw to the left', noremap = true })
+vim.keymap.set('n', '\\', ':Lexplore<CR>', { desc = 'Open current working dir', noremap = true }) -- \
+
+-- **TODO** doesn't work as expected
+--vim.keymap.set('n', '|', ':Lexplore .<CR>', { desc = 'Open file dir to the left', noremap = true }) -- Shift \
+
+-- noops
+vim.keymap.set('n', 'Q', '<nop>')

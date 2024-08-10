@@ -11,7 +11,7 @@ vim.g.have_nerd_font = true
 
 -- netrw
 vim.g.netrw_keepdir = 0
---vim.g.netrw_liststyle=3
+vim.g.netrw_liststyle = 3
 vim.g.netrw_winsize = 30
 vim.g.netrw_banner = 0
 vim.g.netrw_localcopydircmd = 'cp -r' -- enable recursive copy of directories
@@ -54,9 +54,12 @@ vim.opt.breakindent = true
 -- Save undo history
 vim.opt.undofile = true
 
+-- Searching
 -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
 
 -- Keep signcolumn on by default
 vim.opt.signcolumn = 'yes'

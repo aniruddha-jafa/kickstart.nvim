@@ -13,9 +13,11 @@ require('lazy').setup({
 
   require 'kickstart.plugins.tokyonight',
 
-  'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically  
+  'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
 
   require 'kickstart.plugins.which-key',
+
+  require 'kickstart.plugins.gitsigns', -- ads gitsigns recommended keymaps
 
   require 'kickstart.plugins.telescope',
 
@@ -30,8 +32,6 @@ require('lazy').setup({
   require 'kickstart.plugins.mini',
 
   require 'kickstart.plugins.treesitter',
-
-
 
   -- other plugins that are part of kickstart
   -- require 'kickstart.plugins.debug',

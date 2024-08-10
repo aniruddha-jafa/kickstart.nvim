@@ -182,7 +182,7 @@ return {
         },
         clangd = {},
         gopls = {},
-        jdtls = {},
+        --jdtls = {}, -- let it be started by java-specific file, else 2 LSPs would start
         -- pyright = {},
         -- rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
